@@ -16,9 +16,11 @@ Pola `{{...}}` uzupełnijcie. ID to identyfikatory z naszego konta, bez dostępu
 
 Jest na każdym slajdzie, niezmienione 1:1.
 
-- **Zasób w Canvie:** {{ID zasobu z logo}}
-- **Plik źródłowy:** {{gdzie leży oryginał, np. Dysk Google}}
-- **Miejsce i szerokość na slajdzie 1080x1350:** {{np. prawy dolny róg, 160 px}}
+- **Zasób w Canvie:** `MAHaoyw_ES0` (białe logo z gwiazdką, na ciemne tło)
+- **Plik źródłowy:** Dysk Google, folder „Logo - Bracia Rodzeń”, plik `br.png` (500x190, przezroczyste tło)
+- **Miejsce i szerokość na slajdzie 1080x1350:** prawy górny róg, 60 px od krawędzi, szerokość 240 px (wysokość 91 px)
+- **Tło pod logo:** ciemne. Logo jest białe, więc slajdy robimy na ciemnym tle albo na ciemnym zdjęciu. Na żółtym i białym tle go nie widać.
+- **Wersja czarna:** {{w folderze jest starsze czarne logo „Kopia Bracia Rodzeń.png” o innym kroju. Wpiszcie tu ID aktualnej czarnej wersji, jeśli ma być używana na jasnym tle.}}
 
 ## Zdjęcia
 

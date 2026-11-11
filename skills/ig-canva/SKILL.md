@@ -43,7 +43,8 @@ Szukaj w tej kolejności:
 
 1. Zdjęcie, które dostaliśmy w rozmowie.
 2. Dysk Google: foldery z `canva.md`. Pokaż dwa, trzy do wyboru. Plik wgraj do Canvy (`create-upload-url`), dopiero potem na slajd.
-3. Nic nie pasuje: zaproponuj inny układ bez zdjęcia (wzorzec 4, slajd z samym tekstem) albo powiedz, jakie zdjęcie trzeba zrobić.
+3. Zdjęcie wygenerowane w Canvie (`generate-image`, proporcje 4:5), tylko jedzenie i przedmioty, nigdy ludzie, pacjenci ani objawy. W wyniku napisz wprost, że zdjęcie jest wygenerowane.
+4. Nic nie pasuje: zaproponuj inny układ bez zdjęcia (wzorzec 4, slajd z samym tekstem) albo powiedz, jakie zdjęcie trzeba zrobić.
 
 W `~/.claude/instagram/log.md` zapisuj nazwę użytego pliku, żeby nie wziąć go drugi raz.
 
@@ -76,6 +77,7 @@ Na każdym slajdzie jest nasze logo, bez wyjątku, także na okładce ze zdjęci
 - Plik bierzemy z `canva.md` (ID zasobu w Canvie). Nie ma go tam: pytamy o plik, nie zgadujemy i nie rysujemy podobnego.
 - Wstawiamy `insert_fill` i na tym koniec. Logo zostaje 1:1: bez zmiany kolorów (`recolor_element` zabronione), bez przycinania, bez obrotu, bez przezroczystości, bez efektów.
 - Zmieniamy tylko rozmiar, zawsze z zachowaniem proporcji (`preserve_aspect_ratio: true`, jeden wymiar).
+- Logo jest białe. Slajd musi mieć pod nim ciemne tło. Jeśli układ jest jasny (żółty, biała karta), zmieniamy tło slajdu, nie logo.
 - To samo miejsce i ta sama wielkość na wszystkich slajdach, poza zewnętrznymi 60 px. Pod logo ma być spokojne tło. Jeśli zdjęcie jest w tym miejscu pstre, przesuwamy zdjęcie albo tekst, nie logo.
 
 ## Krok 3: kontrola przed oddaniem
