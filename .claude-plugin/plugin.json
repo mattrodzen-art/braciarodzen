@@ -1,6 +1,6 @@
 {
   "name": "instagram-agent-pl",
-  "description": "Polski agent do Instagrama dla Braci Rodzeń: 13 skilli (rolki z oceną hooka i rozpiską ujęć, opisy z linterem, karuzele, relacje, profil, plan tygodnia, komentarze, odpowiedzi, DM, przeróbki, audyt, research i humanizer) z narzędziami dostosowanymi do języka polskiego i zasadami dla treści zdrowotnych.",
+  "description": "Polski agent do Instagrama dla Braci Rodzeń: 14 skilli (rolki z oceną hooka i rozpiską ujęć, opisy z linterem, karuzele, posty w Canvie, relacje, profil, plan tygodnia, komentarze, odpowiedzi, DM, przeróbki, audyt, research i humanizer) z narzędziami dostosowanymi do języka polskiego i zasadami dla treści zdrowotnych.",
   "version": "1.0.0-pl",
   "author": {
     "name": "Bracia Rodzeń (adaptacja PL)",

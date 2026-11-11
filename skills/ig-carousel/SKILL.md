@@ -47,7 +47,7 @@ Przy karuzeli z danymi naukowymi: ostatni lub przedostatni slajd to **źródła*
 
 ## Pliki
 
-1080x1350 (4:5), JPEG lub PNG. Zbuduj jako HTML, jedna `<section>` na slajd, `width:1080px; height:1350px`, jeden kolor akcentu, tekst nie mniejszy niż 32 px. Wyrenderuj każdy slajd do PNG (Chrome headless, Playwright albo to, co jest w sesji). Jeśli jest nasz system marki albo Canva z naszym brand kitem, użyj go i nie wymyślaj palety.
+1080x1350 (4:5), JPEG lub PNG. Zbuduj jako HTML, jedna `<section>` na slajd, `width:1080px; height:1350px`, jeden kolor akcentu, tekst nie mniejszy niż 32 px. Wyrenderuj każdy slajd do PNG (Chrome headless, Playwright albo to, co jest w sesji). Jeśli w sesji jest connector Canva, zamiast HTML przekaż zaakceptowany tekst do `/ig-canva`: złoży projekt z naszego wzorca albo brand kitu i nie trzeba wymyślać palety.
 
 ## Wynik
 

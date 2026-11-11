@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "instagram-agent-pl",
-      "description": "13 skilli do Instagrama po polsku, z narzędziami i zasadami dla treści zdrowotnych.",
+      "description": "14 skilli do Instagrama po polsku, z narzędziami i zasadami dla treści zdrowotnych.",
       "source": "./",
       "category": "productivity"
     }

@@ -1,6 +1,6 @@
 # Agent do Instagrama - wersja polska dla Braci Rodzeń
 
-Trzynaście skilli dla Claude'a, które prowadzą konto na Instagramie po polsku. Oparte na darmowym pakiecie [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) (licencja MIT, Jake Schincariol), przetłumaczone i przerobione pod nasz język, nasz styl i treści zdrowotne.
+Czternaście skilli dla Claude'a, które prowadzą konto na Instagramie po polsku. Oparte na darmowym pakiecie [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) (licencja MIT, Jake Schincariol), przetłumaczone i przerobione pod nasz język, nasz styl i treści zdrowotne.
 
 **Nic nie jest publikowane bez nas.** Skille piszą. My publikujemy.
 
@@ -12,7 +12,7 @@ Trzynaście skilli dla Claude'a, które prowadzą konto na Instagramie po polsku
 - Humanizer ma polski słownik wypełniaczy, oparty na naszym skillu „Pisz jak człowiek”, i zamienia cudzysłowy na polskie „”.
 - Warstwa zdrowotna w każdym skillu, który pisze treści: bez obietnic wyleczenia, badania z nazwy, bez porad o lekach w komentarzach i DM, odesłanie do lekarza. Hook z „wyleczysz” albo „gwarantujemy” dostaje dyskwalifikację, a opis z taką frazą nie przechodzi lintera.
 - Profil głosu (`templates/voice.md`) jest w dużej części wypełniony.
-- Opcjonalne użycie connectorów, jeśli są podłączone: Metricool (najlepsze godziny, statystyki, szkic posta do akceptacji) i vidIQ (dane z Instagrama do researchu, transkrypcje YouTube).
+- Opcjonalne użycie connectorów, jeśli są podłączone: Metricool (najlepsze godziny, statystyki, szkic posta do akceptacji), vidIQ (dane z Instagrama do researchu, transkrypcje YouTube) i Canva (gotowy projekt posta, patrz `/ig-canva`).
 
 ## Instalacja
 
@@ -31,7 +31,7 @@ Albo skopiujcie foldery `skills/ig-*` do `~/.claude/skills/`. Potem wpiszcie `/i
 
 Skopiujcie `templates/voice.md` do `~/.claude/instagram/voice.md` i uzupełnijcie pola `{{...}}`. Najszybciej: wklejcie trzy swoje rolki i napiszcie „uzupełnij voice.md na ich podstawie”. Każdy skill czyta ten plik.
 
-## Trzynaście komend
+## Czternaście komend
 
 | komenda | co robi |
 | --- | --- |
@@ -39,6 +39,7 @@ Skopiujcie `templates/voice.md` do `~/.claude/instagram/voice.md` i uzupełnijci
 | `/ig-viral` | Szuka rolek, które działają w niszy, ranking wg mnożnika ponad medianę konta, swipe file. |
 | `/ig-caption` | Opis z podglądem tego, co widać przed „... więcej”, i linterem (w tym obietnice zdrowotne). |
 | `/ig-carousel` | Karuzela: okładka, slajdy, slajd ze źródłami, pliki 1080x1350. |
+| `/ig-canva` | Post albo karuzela jako projekt w Canvie: z naszego wzorca albo z brand kitu, link do edycji, PNG, opis. |
 | `/ig-story` | Relacje na dziś, naklejki, lejek do DM. |
 | `/ig-profile` | Ocena profilu na 100 punktów i przepisanie bio. |
 | `/ig-plan` | Plan tygodnia i lista kont do interakcji. |
@@ -60,12 +61,23 @@ python3 skills/ig-human/detect.py szkic.txt czysty.txt
 python3 skills/ig-viral/swipe.py zebrane.tsv --out ~/.claude/instagram/swipe.md
 ```
 
+## Posty w Canvie
+
+`/ig-canva` potrzebuje connectora Canva (ustawienia Claude'a, sekcja connectorów). Skopiujcie `templates/canva.md` do `~/.claude/instagram/canva.md` i uzupełnijcie numery stron wzorca. Potem wystarczy:
+
+```
+/ig-canva karuzela o tym, co śniadanie robi z glukozą do obiadu
+```
+
+Kolejność jest stała: tekst do akceptacji, kopia wzorca w Canvie, podgląd, zapis po „tak”, eksport PNG, opis. Skill nie rusza starych projektów i nic nie publikuje.
+
 ## Uczciwie o ograniczeniach
 
 - **Ocena hooków nie przewiduje wyświetleń.** W oryginale dobrze odsiewała słabe hooki (AUC 0,83), a hity od wpadek tego samego twórcy prawie wcale (0,56, rzut monetą to 0,50). Wersja polska nie była testowana na polskim korpusie. Ostatnie słowo ma wykres utrzymania widzów.
 - **Humanizer to heurystyki**, nie GPTZero ani inny detektor. Nie obiecuje „niewykrywalności”.
 - **Liczby z Instagrama się starzeją.** Limit pięciu hashtagów obowiązuje od 18 grudnia 2025. Jeśli coś tu przeczy temu, jak Instagram działa dziś, rację ma Instagram.
 - **Kontrola obietnic zdrowotnych łapie typowe frazy**, nie wszystko. Nie zastępuje przeczytania tekstu przez człowieka, a przy materiałach reklamowych i produktowych także sprawdzenia zgodności z przepisami.
+- **Canva generuje po swojemu.** Generator z brand kitem oddaje zwykle jedną stronę i potrafi przepisać tekst albo zgubić polskie znaki. Dlatego domyślna droga to kopia naszego wzorca, a każdą stronę trzeba obejrzeć.
 - **Nic nie publikuje się samo.** Automatyczne publikowanie, komentowanie i masowe DM łamią regulamin Instagrama.
 
 ## Pliki
@@ -81,6 +93,7 @@ skills/ig-human/detect.py        pięć testów „czy to AI”
 skills/ig-viral/swipe.py         ranking wg mnożnika i rozpoznawanie formuł
 skills/ig-profile/rubric.json    rubryka profilu na 100 punktów
 templates/voice.md               profil głosu Braci Rodzeń
+templates/canva.md               brand kit, projekt-wzorzec i opis stylu dla /ig-canva
 ```
 
 ## Licencja
