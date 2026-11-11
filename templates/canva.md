@@ -12,6 +12,13 @@ Pola `{{...}}` uzupełnijcie. ID to identyfikatory z naszego konta, bez dostępu
 - **Projekt-wzorzec postów:** `DAG1f_3BmUg` - „Post na Instagram (3:4)”, strony 1080x1350, zbiorczy plik z postami
 - **Folder na nowe posty:** {{nazwa albo ID folderu, jeśli chcemy je trzymać w jednym miejscu}}
 
+## Zdjęcia
+
+- **Canva:** zasoby konta i strony projektu-wzorca
+- **Dysk Google, „Zdjęcia Braci Rodzeń”:** folder `1Yr27WVHW6MII8egM0-jliiU_CgJ0Oj2v`
+- **Dysk Google, „Kuchnia Braci Rodzeń”:** folder `1Fp4ph9Ca_GdLnXSfZc-YR2bscm_q8yHA`
+- {{inne foldery: wydarzenia, prelegenci}}
+
 ## Strony wzorca
 
 Które strony zbiorczego pliku kopiujemy jako układ. Wystarczą trzy, cztery.
@@ -27,7 +34,7 @@ Najwygodniej zrobić w Canvie osobny, krótki projekt „IG WZORZEC” z czterem
 
 ## Styl (opis do generowania)
 
-Spisane z pierwszych stron wzorca. Poprawcie, jeśli się zmieniło.
+Spisane z pierwszych stron wzorca i z postów o największym zasięgu (`skills/ig-canva/wzorce.md`). Poprawcie, jeśli się zmieniło.
 
 - Format 1080x1350, zdjęcie na cały kadr (jedzenie, ilustracja medyczna), bez białych marginesów.
 - Tekst wersalikami, gruby, bezszeryfowy.
@@ -35,6 +42,7 @@ Spisane z pierwszych stron wzorca. Poprawcie, jeśli się zmieniło.
 - Dopowiedzenie na dole: biały tekst na czarnych paskach.
 - Żółta strzałka z czarnym obrysem wskazuje to, o czym mowa.
 - Kolory: żółty {{#hex}}, granatowy {{#hex}}, czarny, biały.
+- Biała karta (żart, dialog): białe tło, czarna zaokrąglona ramka, awatary u góry, pogrubiony tytuł, tekst wyrównany do lewej.
 - Font: {{nazwa z brand kitu}}
 - Podpis: {{@handle}}, {{gdzie na slajdzie}}
 

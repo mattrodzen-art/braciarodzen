@@ -92,6 +92,7 @@ skills/ig-human/humanize.py      trzy przejścia czyszczące
 skills/ig-human/detect.py        pięć testów „czy to AI”
 skills/ig-viral/swipe.py         ranking wg mnożnika i rozpoznawanie formuł
 skills/ig-profile/rubric.json    rubryka profilu na 100 punktów
+skills/ig-canva/wzorce.md        pięć układów postów o największym zasięgu, z liczbami
 templates/voice.md               profil głosu Braci Rodzeń
 templates/canva.md               brand kit, projekt-wzorzec i opis stylu dla /ig-canva
 ```

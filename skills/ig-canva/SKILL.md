@@ -18,7 +18,8 @@ Agent od postów. Bierze temat albo gotowy tekst i oddaje projekt w Canvie, któ
 
 1. Sprawdź, czy w sesji są narzędzia Canvy (`generate-design`, `copy-design`, `edit-design`, `export-design`). Jeśli nie ma, powiedz to wprost i oddaj tekst slajdów oraz pliki z `/ig-carousel` (HTML do PNG). Nie udawaj, że projekt powstał.
 2. Przeczytaj `~/.claude/instagram/voice.md` i `~/.claude/instagram/canva.md`, jeśli są. W `canva.md` jest ID brand kitu, ID projektu-wzorca i opis naszego stylu. Wzór leży w `templates/canva.md`.
-3. Jeśli `canva.md` nie ma: `list-brand-kits` (jeden kit = bierzemy go, kilka = pytamy raz) i `search-designs` z frazą „Instagram”, żeby znaleźć projekt, z którego bierzemy wzór. Zapisz wynik do `canva.md`, żeby nie pytać drugi raz.
+3. Przeczytaj `wzorce.md` z tego folderu. To pięć układów, które u nas mają największy zasięg, z liczbami. Każdy nowy post dostaje jeden z nich. Nazwij go przy tekście („wzorzec 3”) i powiedz, dlaczego ten.
+4. Jeśli `canva.md` nie ma: `list-brand-kits` (jeden kit = bierzemy go, kilka = pytamy raz) i `search-designs` z frazą „Instagram”, żeby znaleźć projekt, z którego bierzemy wzór. Zapisz wynik do `canva.md`, żeby nie pytać drugi raz.
 
 ## Krok 1: tekst
 
@@ -28,7 +29,19 @@ Projekt bez zaakceptowanego tekstu to strata czasu, bo każda poprawka słowa oz
 - Jest gotowy tekst: sprawdź go zasadami z `/ig-carousel` (25 słów na slajd, numeracja, handle, slajd ze źródłami przy danych).
 - Zawsze: `/ig-human` na tekście slajdów i warstwa zdrowotna. Bez „wyleczysz”, bez gwarancji, liczba tylko ze źródłem na slajdzie.
 
+Przy wzorcach 1 i 2 z `wzorce.md` na grafice nie ma tekstu. Wtedy „tekst” to wybór zdjęcia i pierwsze zdanie opisu, które nazywa to, co widać.
+
 Pokaż tekst jako numerowaną listę i poczekaj na „tak”. Dopiero potem Canva.
+
+## Zdjęcia
+
+Najlepsze posty stoją na prawdziwym zdjęciu, nie na grafice ze stocka. Szukaj w tej kolejności:
+
+1. Zdjęcie, które dostaliśmy w rozmowie.
+2. Canva: zasoby konta i strony projektu-wzorca (`get-assets`, `search-designs`).
+3. Dysk Google: foldery z `canva.md` („Zdjęcia Braci Rodzeń”, „Kuchnia Braci Rodzeń”). Pokaż dwa, trzy do wyboru. Plik z Dysku trzeba wgrać do Canvy, zanim trafi na slajd. Jeśli się nie da, podaj nazwę pliku i zostaw na slajdzie miejsce z opisem.
+
+Nie ma pasującego zdjęcia: powiedz, jakie trzeba zrobić (co w kadrze, z bliska, pion). Nie zastępuj go wygenerowanym.
 
 ## Krok 2: projekt
 
