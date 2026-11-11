@@ -1,0 +1,1237 @@
+{
+ "version": "1.0-pl",
+ "note": "Polski słownik dla humanize.py i detect.py. Oparty na skillu „Pisz jak człowiek” Braci Rodzeń i na angielskim slop.json z instagram-agent-skill. Przymiotniki są wpisane we wszystkich formach, bo regex nie zna odmiany. Plik jest do edycji: jeśli jakieś słowo jest naprawdę wasze, usuńcie je stąd.",
+ "invisible": [
+  {
+   "cp": "U+200B",
+   "name": "ZERO WIDTH SPACE",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200C",
+   "name": "ZERO WIDTH NON-JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200D",
+   "name": "ZERO WIDTH JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+2060",
+   "name": "WORD JOINER",
+   "action": "delete"
+  },
+  {
+   "cp": "U+FEFF",
+   "name": "ZERO WIDTH NO-BREAK SPACE / BOM",
+   "action": "delete"
+  },
+  {
+   "cp": "U+00AD",
+   "name": "SOFT HYPHEN",
+   "action": "delete"
+  },
+  {
+   "cp": "U+180E",
+   "name": "MONGOLIAN VOWEL SEPARATOR",
+   "action": "delete"
+  },
+  {
+   "cp": "U+061C",
+   "name": "ARABIC LETTER MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200E",
+   "name": "LEFT-TO-RIGHT MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+200F",
+   "name": "RIGHT-TO-LEFT MARK",
+   "action": "delete"
+  },
+  {
+   "cp": "U+E0000-U+E007F",
+   "name": "TAG CHARACTERS (invisible ASCII smuggling)",
+   "action": "delete"
+  },
+  {
+   "cp": "U+00A0",
+   "name": "NO-BREAK SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+202F",
+   "name": "NARROW NO-BREAK SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2009",
+   "name": "THIN SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2007",
+   "name": "FIGURE SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2003",
+   "name": "EM SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2002",
+   "name": "EN SPACE",
+   "action": "space"
+  },
+  {
+   "cp": "U+2063",
+   "name": "INVISIBLE SEPARATOR",
+   "action": "delete"
+  }
+ ],
+ "typographic": [
+  {
+   "from": "—",
+   "name": "PAUZA (em dash)",
+   "to": ", "
+  },
+  {
+   "from": "“",
+   "name": "ANGIELSKI CUDZYSŁÓW OTWIERAJĄCY",
+   "to": "„"
+  },
+  {
+   "from": "‘",
+   "name": "LEWY APOSTROF",
+   "to": "'"
+  },
+  {
+   "from": "’",
+   "name": "PRAWY APOSTROF",
+   "to": "'"
+  },
+  {
+   "from": "…",
+   "name": "WIELOKROPEK (jeden znak)",
+   "to": "..."
+  },
+  {
+   "from": "•",
+   "name": "PUNKTOR",
+   "to": "-"
+  },
+  {
+   "from": "→",
+   "name": "STRZAŁKA",
+   "to": "->"
+  },
+  {
+   "from": "·",
+   "name": "KROPKA ŚRODKOWA",
+   "to": "-"
+  }
+ ],
+ "words": [
+  {
+   "find": "kluczowy",
+   "replace": "ważny",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowa",
+   "replace": "ważna",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowe",
+   "replace": "ważne",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowego",
+   "replace": "ważnego",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowej",
+   "replace": "ważnej",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowych",
+   "replace": "ważnych",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowym",
+   "replace": "ważnym",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczową",
+   "replace": "ważną",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowymi",
+   "replace": "ważnymi",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kluczowemu",
+   "replace": "ważnemu",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotny",
+   "replace": "ważny",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotna",
+   "replace": "ważna",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotne",
+   "replace": "ważne",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnego",
+   "replace": "ważnego",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnej",
+   "replace": "ważnej",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnych",
+   "replace": "ważnych",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnym",
+   "replace": "ważnym",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotną",
+   "replace": "ważną",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnymi",
+   "replace": "ważnymi",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "istotnemu",
+   "replace": "ważnemu",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowy",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowa",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowe",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksową",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "kompleksowemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistyczny",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistyczna",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistyczne",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistyczną",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "holistycznemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjny",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjna",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjne",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjną",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "innowacyjnemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowy",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowa",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowe",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomową",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "przełomowemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynujący",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynująca",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynujące",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynujących",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującą",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "fascynującemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykły",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykła",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłe",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłą",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykłemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowy",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowa",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowe",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkową",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "wyjątkowemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalny",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalna",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalne",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnego",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnej",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnych",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnym",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalną",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnymi",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "unikalnemu",
+   "replace": "",
+   "family": "przymiotniki"
+  },
+  {
+   "find": "niezwykle",
+   "replace": "bardzo",
+   "family": "słowa"
+  },
+  {
+   "find": "niesamowicie",
+   "replace": "bardzo",
+   "family": "słowa"
+  },
+  {
+   "find": "ogromnie",
+   "replace": "bardzo",
+   "family": "słowa"
+  },
+  {
+   "find": "szereg",
+   "replace": "kilka",
+   "family": "słowa"
+  },
+  {
+   "find": "szeregu",
+   "replace": "kilku",
+   "family": "słowa"
+  },
+  {
+   "find": "dodatkowo",
+   "replace": "do tego",
+   "family": "słowa"
+  },
+  {
+   "find": "ponadto",
+   "replace": "do tego",
+   "family": "słowa"
+  },
+  {
+   "find": "co więcej",
+   "replace": "do tego",
+   "family": "słowa"
+  },
+  {
+   "find": "aczkolwiek",
+   "replace": "ale",
+   "family": "słowa"
+  },
+  {
+   "find": "niemniej jednak",
+   "replace": "mimo to",
+   "family": "słowa"
+  },
+  {
+   "find": "optymalny",
+   "replace": "najlepszy",
+   "family": "słowa"
+  },
+  {
+   "find": "optymalnie",
+   "replace": "najlepiej",
+   "family": "słowa"
+  },
+  {
+   "find": "efektywnie",
+   "replace": "skutecznie",
+   "family": "słowa"
+  },
+  {
+   "find": "zoptymalizować",
+   "replace": "poprawić",
+   "family": "słowa"
+  },
+  {
+   "find": "zaimplementować",
+   "replace": "wprowadzić",
+   "family": "słowa"
+  },
+  {
+   "find": "implementacja",
+   "replace": "wprowadzenie",
+   "family": "słowa"
+  },
+  {
+   "find": "wdrożyć",
+   "replace": "wprowadzić",
+   "family": "słowa"
+  },
+  {
+   "find": "wykorzystać",
+   "replace": "użyć",
+   "family": "słowa"
+  },
+  {
+   "find": "wykorzystywać",
+   "replace": "używać",
+   "family": "słowa"
+  },
+  {
+   "find": "posiadać",
+   "replace": "mieć",
+   "family": "słowa"
+  },
+  {
+   "find": "posiada",
+   "replace": "ma",
+   "family": "słowa"
+  },
+  {
+   "find": "posiadają",
+   "replace": "mają",
+   "family": "słowa"
+  },
+  {
+   "find": "dokonać",
+   "replace": "zrobić",
+   "family": "słowa"
+  },
+  {
+   "find": "dokonuje",
+   "replace": "robi",
+   "family": "słowa"
+  },
+  {
+   "find": "mozaika",
+   "replace": "mieszanka",
+   "family": "słowa"
+  },
+  {
+   "find": "gobelin",
+   "replace": "mieszanka",
+   "family": "słowa"
+  },
+  {
+   "find": "katalizator",
+   "replace": "zapalnik",
+   "family": "słowa"
+  },
+  {
+   "find": "filar",
+   "replace": "podstawa",
+   "family": "słowa"
+  },
+  {
+   "find": "filarem",
+   "replace": "podstawą",
+   "family": "słowa"
+  },
+  {
+   "find": "fundamentem",
+   "replace": "podstawą",
+   "family": "słowa"
+  }
+ ],
+ "phrases": [
+  {
+   "find": "w dzisiejszym świecie",
+   "replace": "",
+   "family": "wypełniacze"
+  },
+  {
+   "find": "w dzisiejszych czasach",
+   "replace": "dziś",
+   "family": "wypełniacze"
+  },
+  {
+   "find": "w dobie",
+   "replace": "w czasach",
+   "family": "wypełniacze"
+  },
+  {
+   "find": "w erze",
+   "replace": "w czasach",
+   "family": "wypełniacze"
+  },
+  {
+   "find": "odgrywa kluczową rolę",
+   "replace": "ma znaczenie",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "odgrywa istotną rolę",
+   "replace": "ma znaczenie",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "odgrywają kluczową rolę",
+   "replace": "mają znaczenie",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "stanowi świadectwo",
+   "replace": "pokazuje",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "jest świadectwem",
+   "replace": "pokazuje",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "pełni funkcję",
+   "replace": "jest",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "pełni rolę",
+   "replace": "jest",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "służy jako",
+   "replace": "jest",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "może poszczycić się",
+   "replace": "ma",
+   "family": "wzniosłość"
+  },
+  {
+   "find": "warto zauważyć, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "warto zauważyć",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "warto podkreślić, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "warto podkreślić",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "warto pamiętać, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "warto pamiętać",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "należy podkreślić, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "należy pamiętać, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "trzeba zaznaczyć, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "nie da się ukryć, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "nie ulega wątpliwości, że",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "co ciekawe,",
+   "replace": "",
+   "family": "asekuracja"
+  },
+  {
+   "find": "zanurzmy się",
+   "replace": "zobaczmy",
+   "family": "zapowiedzi"
+  },
+  {
+   "find": "przyjrzyjmy się bliżej",
+   "replace": "zobaczmy",
+   "family": "zapowiedzi"
+  },
+  {
+   "find": "przyjrzyjmy się",
+   "replace": "zobaczmy",
+   "family": "zapowiedzi"
+  },
+  {
+   "find": "bez zbędnego przedłużania",
+   "replace": "",
+   "family": "zapowiedzi"
+  },
+  {
+   "find": "podsumowując,",
+   "replace": "",
+   "family": "zakończenia"
+  },
+  {
+   "find": "reasumując,",
+   "replace": "",
+   "family": "zakończenia"
+  },
+  {
+   "find": "w konkluzji,",
+   "replace": "",
+   "family": "zakończenia"
+  },
+  {
+   "find": "ogólnie rzecz biorąc,",
+   "replace": "",
+   "family": "zakończenia"
+  },
+  {
+   "find": "krótko mówiąc,",
+   "replace": "",
+   "family": "zakończenia"
+  },
+  {
+   "find": "na koniec dnia",
+   "replace": "ostatecznie",
+   "family": "kalki"
+  },
+  {
+   "find": "game changer",
+   "replace": "duża zmiana",
+   "family": "kalki"
+  },
+  {
+   "find": "gamechanger",
+   "replace": "duża zmiana",
+   "family": "kalki"
+  },
+  {
+   "find": "na wyciągnięcie ręki",
+   "replace": "blisko",
+   "family": "kalki"
+  },
+  {
+   "find": "podróż do zdrowia",
+   "replace": "droga do zdrowia",
+   "family": "kalki"
+  },
+  {
+   "find": "twoja podróż",
+   "replace": "twoja droga",
+   "family": "kalki"
+  },
+  {
+   "find": "wejdź na wyższy poziom",
+   "replace": "zrób krok dalej",
+   "family": "kalki"
+  },
+  {
+   "find": "mam nadzieję, że to pomoże",
+   "replace": "",
+   "family": "czat"
+  },
+  {
+   "find": "daj znać, jeśli",
+   "replace": "",
+   "family": "czat"
+  },
+  {
+   "find": "oczywiście!",
+   "replace": "",
+   "family": "czat"
+  },
+  {
+   "find": "świetne pytanie",
+   "replace": "",
+   "family": "czat"
+  },
+  {
+   "find": "zatrzymaj się na chwilę",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "przestań scrollować",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "nie scrolluj dalej",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "w dzisiejszym filmie",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "w dzisiejszym odcinku",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "w tym filmie pokażę ci",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "w tym filmie pokażemy wam",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "obejrzyj do końca",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "nie uwierzysz",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "nikt o tym nie mówi",
+   "replace": "mało kto o tym mówi",
+   "family": "instagram"
+  },
+  {
+   "find": "to zmieniło wszystko",
+   "replace": "to dużo zmieniło",
+   "family": "instagram"
+  },
+  {
+   "find": "to twój znak",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "obserwuj po więcej",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "obserwuj, żeby nie przegapić",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "daj serduszko, jeśli",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "zostaw łapkę",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "oznacz kogoś, kto",
+   "replace": "wyślij to komuś, kto",
+   "family": "instagram"
+  },
+  {
+   "find": "udostępnij komuś, kto tego potrzebuje",
+   "replace": "wyślij to komuś, kto tego potrzebuje",
+   "family": "instagram"
+  },
+  {
+   "find": "algorytm kocha",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "oszukaj algorytm",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "biegnij, nie idź",
+   "replace": "",
+   "family": "instagram"
+  },
+  {
+   "find": "must have",
+   "replace": "konieczne",
+   "family": "instagram"
+  }
+ ],
+ "structures": [
+  {
+   "id": "nie-tylko",
+   "regex": "(?i)\\bnie tylko\\b[^.!?\\n]{2,80}\\bale (?:także|również|też|i)\\b",
+   "name": "„Nie tylko X, ale także Y”",
+   "fix": "Rozbij na dwa zdania albo wytnij słabszą połowę."
+  },
+  {
+   "id": "to-nie-x",
+   "regex": "(?i)\\bto nie (?:jest )?[^.!?\\n]{2,50}[,.–-]\\s*to (?:jest )?\\w",
+   "name": "„To nie X, to Y”",
+   "fix": "Powiedz to jedno, co naprawdę masz na myśli. Usuń połowę z ustawieniem."
+  },
+  {
+   "id": "nie-chodzi",
+   "regex": "(?i)\\bnie chodzi o\\b[^.!?\\n]{2,60}[.,]\\s*(?:chodzi o|tu chodzi)\\b",
+   "name": "„Nie chodzi o X. Chodzi o Y.”",
+   "fix": "Zacznij od Y. Odwrócenie to sygnał AI."
+  },
+  {
+   "id": "efekt-pytajnik",
+   "regex": "(?im)^\\s*(?:efekt|rezultat|wynik|haczyk|najlepsze|sekret|odpowiedź)\\?\\s*$",
+   "name": "Retoryczne jednowyrazowe pytanie",
+   "fix": "Odpowiedz od razu w zdaniu, bez inscenizacji."
+  },
+  {
+   "id": "oto-czego",
+   "regex": "(?i)\\boto (?:czego|co) (?:się )?(?:nauczył\\w*|dowiedzieli\\w*)\\b",
+   "name": "„Oto czego się nauczyliśmy”",
+   "fix": "Podaj lekcję. Pomiń zapowiedź."
+  },
+  {
+   "id": "trojka",
+   "regex": "(?i)\\b\\w+, \\w+ (?:i|oraz) \\w+\\.",
+   "name": "Reguła trzech",
+   "fix": "Dwa elementy albo cztery. Trzy to domyślny rytm modelu."
+  },
+  {
+   "id": "rakieta",
+   "regex": "[\\U0001F680\\U0001F525\\U0001F4A1✨\\U0001F3AF\\U0001F4AA]",
+   "name": "Emoji z zestawu AI",
+   "fix": "Najwyżej jedno emoji i nie z tej piątki."
+  },
+  {
+   "id": "sciana-tagow",
+   "regex": "(?:#\\w+[ \\t]*){6,}",
+   "name": "Ściana hashtagów",
+   "fix": "Najwyżej pięć, tematycznych."
+  },
+  {
+   "id": "jako-ai",
+   "regex": "(?i)\\bjako (?:model językowy|sztuczna inteligencja|ai)\\b",
+   "name": "Ślad czatu",
+   "fix": "Usuń zdanie."
+  },
+  {
+   "id": "podsumowujac",
+   "regex": "(?im)^\\s*(?:podsumowując|reasumując|w konkluzji|ogólnie rzecz biorąc)\\b",
+   "name": "Akapit podsumowania",
+   "fix": "Post nie potrzebuje zakończenia w stylu wypracowania."
+  },
+  {
+   "id": "przynęta",
+   "regex": "(?i)\\b(?:zgadzasz się\\?|co myślicie\\?|kto jeszcze\\b|czy tylko ja\\b)\\s*$",
+   "name": "Ogólne pytanie na końcu",
+   "fix": "Zadaj pytanie, które tylko wy możecie zadać, o konkretną rzecz z posta."
+  },
+  {
+   "id": "prośba-o-uwagę",
+   "regex": "(?im)^\\s*(?:zatrzymaj się|przestań scrollować|nie scrolluj|stop[,!])",
+   "name": "Prośba o uwagę",
+   "fix": "Hook ma być samą tezą. Proszenie o uwagę zdradza, że jej nie zdobyliśmy."
+  },
+  {
+   "id": "w-tym-filmie",
+   "regex": "(?i)\\b(?:w (?:tym|dzisiejszym) (?:filmie|odcinku|poście|reelsie|nagraniu)|pokażę (?:ci|wam)|pokażemy (?:ci|wam))\\b",
+   "name": "Wstęp zapowiadający",
+   "fix": "Usuń i zacznij od konkretu. Pierwsze dwie sekundy decydują o całej rolce."
+  },
+  {
+   "id": "emoji-punkty",
+   "regex": "(?m)^\\s*[\\U0001F300-\\U0001FAFF✅➡⬅✔✨]\\s*\\S",
+   "name": "Punkty z emoji",
+   "fix": "Myślnik albo nowa linia. Emoji zamiast punktorów wyglądają najbardziej szablonowo."
+  },
+  {
+   "id": "krzyk",
+   "regex": "\\b[A-ZĄĆĘŁŃÓŚŹŻ]{3,}\\b(?:\\s+\\b[A-ZĄĆĘŁŃÓŚŹŻ]{3,}\\b){2,}",
+   "name": "Trzy słowa wielkimi literami",
+   "fix": "Wielkie litery to głośność, nie zakreślacz. Najwyżej jedno słowo."
+  },
+  {
+   "id": "bait",
+   "regex": "(?i)\\b(?:obserwuj,? (?:żeby|by|po)|oznacz (?:kogoś|osobę)|daj serduszko|zostaw łapkę|udostępnij,? jeśli)\\b",
+   "name": "Ogólna przynęta",
+   "fix": "Poproś o jedną rzecz, na którą ten post naprawdę zasłużył."
+  },
+  {
+   "id": "mgliste-autorytety",
+   "regex": "(?i)\\b(?:badania (?:pokazują|dowodzą|wykazują|potwierdzają)|naukowcy (?:odkryli|twierdzą|udowodnili)|eksperci (?:twierdzą|mówią|zalecają)|udowodniono naukowo|wielu (?:uważa|twierdzi))\\b",
+   "name": "Mglisty autorytet",
+   "fix": "Które badanie? Autor, rok, czasopismo, albo usuń. W naszej niszy to kwestia wiarygodności."
+  },
+  {
+   "id": "stanowi",
+   "regex": "(?i)\\b(?:stanowi|stanowią|pełni funkcję|służy jako)\\b",
+   "name": "Unikanie „jest” i „ma”",
+   "fix": "Napisz „jest” albo „ma”."
+  }
+ ]
+}
