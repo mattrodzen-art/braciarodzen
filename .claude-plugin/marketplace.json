@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "instagram-agent-pl",
+  "description": "Polski agent do Instagrama dla Braci Rodzeń",
+  "owner": { "name": "Bracia Rodzeń" },
+  "plugins": [
+    {
+      "name": "instagram-agent-pl",
+      "description": "13 skilli do Instagrama po polsku, z narzędziami i zasadami dla treści zdrowotnych.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

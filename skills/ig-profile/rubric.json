@@ -1,0 +1,85 @@
+{
+  "version": "1.0-pl",
+  "total": 100,
+  "note": "Dwanaście pozycji plus jedna kontrola wiarygodności dla treści zdrowotnych (bez punktów). Oceniajcie uczciwie: większość profili przy pierwszym podejściu ląduje w okolicach 30-40. Pole imienia, pierwsza linia bio i trzy przypięte posty ważą więcej niż zdjęcie, bo to je przetwarza obcy człowiek, który przyszedł z jednej rolki.",
+  "items": [
+    {
+      "id": "name_field",
+      "points": 12,
+      "full_marks": "Pole imienia (30 znaków, pogrubiona linia, nie handle) ma nazwę i to, czym się zajmujecie, słowami, które ludzie wpisują w wyszukiwarkę: „Bracia Rodzeń | Insulinooporność”. To pole indeksuje wyszukiwarka Instagrama, a większość kont marnuje je na samą nazwę.",
+      "common_fail": "Sama nazwa albo nazwa z emoji."
+    },
+    {
+      "id": "bio_first_line",
+      "points": 12,
+      "full_marks": "Pierwsza linia mówi, dla kogo to jest i co się dla tej osoby zmienia, jej słowami. Nie stanowisko, nie lista przymiotników.",
+      "common_fail": "„Edukacja | Zdrowie | Pasja”."
+    },
+    {
+      "id": "bio_body",
+      "points": 8,
+      "full_marks": "Reszta ze 150 znaków niesie jeden dowód albo jedną konkretną ofertę i czyta się jak zdania, nie lista po kreskach.",
+      "common_fail": "Zupa słów kluczowych albo pustka."
+    },
+    {
+      "id": "pinned_three",
+      "points": 10,
+      "full_marks": "Trzy przypięte posty z trzema różnymi zadaniami: najlepszy dowód, najjaśniejsze wyjaśnienie oferty (np. magazyn, Akademia), najlepsze przedstawienie ludzi. Nie trzy przypadkowo najpopularniejsze.",
+      "common_fail": "Nic nie przypięte, więc na górze jest to, co wrzucono ostatnio."
+    },
+    {
+      "id": "link",
+      "points": 8,
+      "full_marks": "Jeden cel zgodny z tym, co obiecuje bio. Wolno pięć linków; więcej niż dwa to menu, a menu konwertuje gorzej niż drzwi.",
+      "common_fail": "Link-tree z jedenastoma opcjami albo brak linku."
+    },
+    {
+      "id": "highlights",
+      "points": 8,
+      "full_marks": "Cztery do sześciu wyróżnionych relacji nazwanych pytaniami odbiorców: Od czego zacząć, Badania, Magazyn, Kim jesteśmy, Pytania. Spójne okładki. Nic sprzed roku na przodzie.",
+      "common_fail": "„Różne”, „Życie”, „2024” albo 14 relacji bez ładu."
+    },
+    {
+      "id": "grid_legibility",
+      "points": 8,
+      "full_marks": "Pierwsze dziewięć okładek czyta się w miniaturze i mówi, o czym jest konto, bez tapnięcia. Okładki rolek wybrane świadomie, nie pierwsza klatka.",
+      "common_fail": "Dziewięć okładek z twarzą w pół słowa i bez napisu."
+    },
+    {
+      "id": "photo",
+      "points": 6,
+      "full_marks": "Twarz (albo dwie) wypełnia ok. 60% kółka, które ma ok. 40 pikseli. Oczy widoczne, zdjęcie z ostatnich dwóch lat, tło nie konkuruje.",
+      "common_fail": "Zdjęcie całej sylwetki, logo przy marce osobistej albo ciemne selfie."
+    },
+    {
+      "id": "handle",
+      "points": 6,
+      "full_marks": "Czytelny, do wymówienia na głos, ten sam co na YouTube. Bez podkreślników i cyfr zamiast liter.",
+      "common_fail": "Handle, którego nie da się zapisać po usłyszeniu."
+    },
+    {
+      "id": "category_contact",
+      "points": 6,
+      "full_marks": "Konto profesjonalne z kategorią pasującą do działalności i działającymi przyciskami kontaktu. Mail, który ktoś czyta.",
+      "common_fail": "Konto prywatne, więc brak statystyk i przycisku kontaktu."
+    },
+    {
+      "id": "recent_activity",
+      "points": 10,
+      "full_marks": "Post z ostatnich siedmiu dni i odpowiedzi na komentarze pod najnowszym. Konto, które ostatnio publikowało w marcu, wygląda na zamknięte.",
+      "common_fail": "Pięć tygodni przerwy albo ściana komentarzy bez odpowiedzi."
+    },
+    {
+      "id": "story_presence",
+      "points": 6,
+      "full_marks": "Relacja jest teraz albo przez większość dni. To różnica między profilem a ludźmi.",
+      "common_fail": "Nigdy kółka."
+    },
+    {
+      "id": "health_credibility",
+      "points": 0,
+      "full_marks": "PUNKTY BONUSOWE NIE LICZĄ SIĘ DO 100, oceńcie osobno: czy z profilu widać, kto stoi za treściami (lekarze, PTLI, źródła), i czy nie ma obietnic wyleczenia w bio. W niszy zdrowotnej to warunek zaufania.",
+      "common_fail": "„Wylecz się w 30 dni” w bio, brak informacji, kto mówi."
+    }
+  ]
+}
