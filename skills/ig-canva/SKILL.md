@@ -35,11 +35,17 @@ Pokaż tekst jako numerowaną listę i poczekaj na „tak”. Dopiero potem Canv
 
 ## Zdjęcia
 
-Najlepsze posty stoją na prawdziwym zdjęciu, nie na grafice ze stocka. Szukaj w tej kolejności:
+Najlepsze posty stoją na prawdziwym zdjęciu, nie na grafice ze stocka.
+
+**Nie powtarzamy zdjęć.** Zdjęcie, które siedzi już w którymś projekcie w Canvie, najpewniej było opublikowane. Z projektu-wzorca kopiujemy układ, a zdjęcie zawsze podmieniamy (`update_fill`). Jeśli po kopii na stronie zostało stare zdjęcie, post nie jest gotowy.
+
+Szukaj w tej kolejności:
 
 1. Zdjęcie, które dostaliśmy w rozmowie.
-2. Canva: zasoby konta i strony projektu-wzorca (`get-assets`, `search-designs`).
-3. Dysk Google: foldery z `canva.md` („Zdjęcia Braci Rodzeń”, „Kuchnia Braci Rodzeń”). Pokaż dwa, trzy do wyboru. Plik z Dysku trzeba wgrać do Canvy, zanim trafi na slajd. Jeśli się nie da, podaj nazwę pliku i zostaw na slajdzie miejsce z opisem.
+2. Dysk Google: foldery z `canva.md`. Pokaż dwa, trzy do wyboru. Plik wgraj do Canvy (`create-upload-url`), dopiero potem na slajd.
+3. Nic nie pasuje: zaproponuj inny układ bez zdjęcia (wzorzec 4, slajd z samym tekstem) albo powiedz, jakie zdjęcie trzeba zrobić.
+
+W `~/.claude/instagram/log.md` zapisuj nazwę użytego pliku, żeby nie wziąć go drugi raz.
 
 Nie ma pasującego zdjęcia: powiedz, jakie trzeba zrobić (co w kadrze, z bliska, pion). Nie zastępuj go wygenerowanym.
 
@@ -63,6 +69,15 @@ Dwie drogi. Pierwsza daje nasz wygląd, druga jest na start i na nowe układy.
 4. Generator zwykle oddaje jedną stronę. Przy karuzeli wygeneruj okładkę, a resztę dołóż przez `edit-design` (`add_page`, `add_text`, `format_text`) w tym samym układzie, albo przejdź na drogę A.
 5. Sprawdź polskie znaki i czy tekst nie został przepisany. Generator lubi dopisywać. Poprawki jak w A, punkty 2-5.
 
+## Logo
+
+Na każdym slajdzie jest nasze logo, bez wyjątku, także na okładce ze zdjęciem i na slajdzie z przepisem.
+
+- Plik bierzemy z `canva.md` (ID zasobu w Canvie). Nie ma go tam: pytamy o plik, nie zgadujemy i nie rysujemy podobnego.
+- Wstawiamy `insert_fill` i na tym koniec. Logo zostaje 1:1: bez zmiany kolorów (`recolor_element` zabronione), bez przycinania, bez obrotu, bez przezroczystości, bez efektów.
+- Zmieniamy tylko rozmiar, zawsze z zachowaniem proporcji (`preserve_aspect_ratio: true`, jeden wymiar).
+- To samo miejsce i ta sama wielkość na wszystkich slajdach, poza zewnętrznymi 60 px. Pod logo ma być spokojne tło. Jeśli zdjęcie jest w tym miejscu pstre, przesuwamy zdjęcie albo tekst, nie logo.
+
 ## Krok 3: kontrola przed oddaniem
 
 Obejrzyj miniaturę każdej strony, nie zakładaj.
@@ -71,6 +86,8 @@ Obejrzyj miniaturę każdej strony, nie zakładaj.
 - Tekst poza zewnętrznymi 120 px, bo siatka profilu przycina.
 - ą, ę, ł, ó, ś, ż, ź, ć, ń wyświetlają się poprawnie. Część fontów ich nie ma.
 - Tekst na slajdzie zgadza się słowo w słowo z zaakceptowanym.
+- Logo na każdej stronie, niezmienione, w tym samym miejscu.
+- Żadnego zdjęcia, które było już w innym projekcie w Canvie.
 - Numer slajdu i handle na każdej stronie. Źródła przy danych.
 - Zdjęcia: bez „przed i po”, bez cudzych twarzy i wyników pacjentów bez zgody.
 
@@ -104,5 +121,7 @@ ALT
 - Nie publikujemy i nie planujemy. Wyjątek jak w `/ig-plan`: jeśli o to poprosimy i jest Metricool, gotowy post może trafić jako szkic **do akceptacji** (`createScheduledPostForReview`), po wyraźnym „tak”.
 - Nie zapisujemy zmian w projekcie bez pokazania podglądu.
 - Nie edytujemy wzorca ani żadnego starego projektu. Zawsze kopia.
+- Nie używamy drugi raz zdjęcia, które jest już w Canvie.
+- Nie oddajemy slajdu bez logo i nie zmieniamy logo.
 - Nie generujemy zdjęć ludzi, pacjentów ani „efektów”. Wykres tylko z naszych danych.
 - Nie zgadujemy stylu. Jeśli `canva.md` jest puste, a wzorca nie ma, pytamy o jeden post, który wygląda tak, jak ma wyglądać następny.

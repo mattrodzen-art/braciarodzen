@@ -12,9 +12,18 @@ Pola `{{...}}` uzupełnijcie. ID to identyfikatory z naszego konta, bez dostępu
 - **Projekt-wzorzec postów:** `DAG1f_3BmUg` - „Post na Instagram (3:4)”, strony 1080x1350, zbiorczy plik z postami
 - **Folder na nowe posty:** {{nazwa albo ID folderu, jeśli chcemy je trzymać w jednym miejscu}}
 
+## Logo
+
+Jest na każdym slajdzie, niezmienione 1:1.
+
+- **Zasób w Canvie:** {{ID zasobu z logo}}
+- **Plik źródłowy:** {{gdzie leży oryginał, np. Dysk Google}}
+- **Miejsce i szerokość na slajdzie 1080x1350:** {{np. prawy dolny róg, 160 px}}
+
 ## Zdjęcia
 
-- **Canva:** zasoby konta i strony projektu-wzorca
+Zdjęć, które są już w projektach w Canvie, nie używamy drugi raz.
+
 - **Dysk Google, „Zdjęcia Braci Rodzeń”:** folder `1Yr27WVHW6MII8egM0-jliiU_CgJ0Oj2v`
 - **Dysk Google, „Kuchnia Braci Rodzeń”:** folder `1Fp4ph9Ca_GdLnXSfZc-YR2bscm_q8yHA`
 - {{inne foldery: wydarzenia, prelegenci}}
