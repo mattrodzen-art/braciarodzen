@@ -77,7 +77,8 @@ Na każdym slajdzie jest nasze logo, bez wyjątku, także na okładce ze zdjęci
 - Plik bierzemy z `canva.md` (ID zasobu w Canvie). Nie ma go tam: pytamy o plik, nie zgadujemy i nie rysujemy podobnego.
 - Wstawiamy `insert_fill` i na tym koniec. Logo zostaje 1:1: bez zmiany kolorów (`recolor_element` zabronione), bez przycinania, bez obrotu, bez przezroczystości, bez efektów.
 - Zmieniamy tylko rozmiar, zawsze z zachowaniem proporcji (`preserve_aspect_ratio: true`, jeden wymiar).
-- Logo jest białe. Slajd musi mieć pod nim ciemne tło. Jeśli układ jest jasny (żółty, biała karta), zmieniamy tło slajdu, nie logo.
+- W `canva.md` są dwa logo. Domyślne to twarze, pasuje na każde tło. Biały napis tylko na ciemne tło.
+- Tekst dodany przez `add_text` dostaje domyślny krój Canvy. Nagłówki i treść bierzemy ze stron wzorca (opis w `canva.md`, „karta z tekstem”), żeby miały nasz krój. `add_text` zostaje na drobne rzeczy: numer slajdu, handle, źródło.
 - To samo miejsce i ta sama wielkość na wszystkich slajdach, poza zewnętrznymi 60 px. Pod logo ma być spokojne tło. Jeśli zdjęcie jest w tym miejscu pstre, przesuwamy zdjęcie albo tekst, nie logo.
 
 ## Krok 3: kontrola przed oddaniem

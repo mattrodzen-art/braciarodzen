@@ -16,11 +16,18 @@ Pola `{{...}}` uzupełnijcie. ID to identyfikatory z naszego konta, bez dostępu
 
 Jest na każdym slajdzie, niezmienione 1:1.
 
-- **Zasób w Canvie:** `MAHaoyw_ES0` (białe logo z gwiazdką, na ciemne tło)
-- **Plik źródłowy:** Dysk Google, folder „Logo - Bracia Rodzeń”, plik `br.png` (500x190, przezroczyste tło)
-- **Miejsce i szerokość na slajdzie 1080x1350:** prawy górny róg, 60 px od krawędzi, szerokość 240 px (wysokość 91 px)
-- **Tło pod logo:** ciemne. Logo jest białe, więc slajdy robimy na ciemnym tle albo na ciemnym zdjęciu. Na żółtym i białym tle go nie widać.
-- **Wersja czarna:** {{w folderze jest starsze czarne logo „Kopia Bracia Rodzeń.png” o innym kroju. Wpiszcie tu ID aktualnej czarnej wersji, jeśli ma być używana na jasnym tle.}}
+- **Logo główne (twarze):** zasób w Canvie `MAHasYxI46E`, plik 1254x1254 z przezroczystym tłem, przysłany przez nas 12.11.2026. Czarna kreska i białe wypełnienie twarzy, więc działa na jasnym i na ciemnym tle.
+- **Miejsce i wielkość na slajdzie 1080x1350:** lewy górny róg, 70 px od krawędzi, 230x230 px.
+- **Logo napis (białe „BRACIA RODZEŃ” z gwiazdką):** zasób `MAHaoyw_ES0`, z Dysku Google, folder „Logo - Bracia Rodzeń”, plik `br.png`. Tylko na ciemne tło, gdy nie pasuje logo z twarzami.
+- Zmieniamy wyłącznie rozmiar, z zachowaniem proporcji.
+
+## Układ „karta z tekstem”
+
+Sprawdzony w projekcie `DAHasRFwS_w` („5 korzyści low carb”). Każda strona ma nasz krój: nagłówek granatowy na żółtym i tekst biały na czarnych paskach.
+
+- Nową karuzelę w tym układzie robimy przez `merge-designs`: `create_new_design` z jedną stroną z `DAHasRFwS_w`, potem `modify_existing_design` i `insert_pages` po jednej stronie na wywołanie.
+- Na każdej stronie podmieniamy dwa teksty (`replace_text`), numer slajdu i ewentualnie źródło.
+- Identyfikatory elementów są inne na każdej stronie. Najpierw `read-design` z `design_content`.
 
 ## Zdjęcia
 
